@@ -18,6 +18,7 @@
 #
 #    1.0 / 2.0 => 0.5
 
+
 require "01_temperature"
 
 describe "temperature conversion functions" do
@@ -58,6 +59,7 @@ describe "temperature conversion functions" do
 
     it "converts body temperature" do
       ctof(37).should be_within(0.1).of(98.6)
+
       # Why do we need to use be_within?
       # See http://www.ruby-forum.com/topic/169330
       # and http://en.wikipedia.org/wiki/IEEE_754-2008
